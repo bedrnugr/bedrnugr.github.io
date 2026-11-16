@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bedirhan UĞUR – Bandırma OnYedi Eylül Üniversitesi Öğrencisi</title>
+<meta name="description" content="Bedirhan UĞUR’ın kişisel sitesi. Bilgisayar Mühendisliği öğrencisi, C ile projeler geliştiriyor.">
+<style>
+  :root {
+    --bg: #eef1f4;
+    --ink: #14202b;
+    --muted: #4d5b69;
+    --accent: #1f5fbf;
+    --line: #cfd7df;
+    --code-bg: #14202b;
+    --code-ink: #e6edf3;
+    --code-key: #7fb2ff;
+    --code-str: #a6e3a1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #10161d;
+      --ink: #e8eef4;
+      --muted: #9fb0c0;
+      --accent: #7fb2ff;
+      --line: #2a3643;
+      --code-bg: #0a0f14;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+  h1, h2 {
+    font-family: "Iowan Old Style", Georgia, "Times New Roman", serif;
+    line-height: 1.15;
+    margin: 0;
+  }
+  h1 { font-size: clamp(2.4rem, 8vw, 3.6rem); letter-spacing: -0.02em; }
+  h2 { font-size: 1.6rem; margin-bottom: 16px; }
+  p { margin: 0 0 14px; max-width: 62ch; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+  .sub { color: var(--muted); font-size: 1.1rem; margin-top: 10px; }
+  pre {
+    background: var(--code-bg);
+    color: var(--code-ink);
+    border-radius: 10px;
+    padding: 22px 24px;
+    margin: 32px 0 0;
+    overflow-x: auto;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+  .k { color: var(--code-key); }
+  .s { color: var(--code-str); }
+  .out { display: block; margin-top: 14px; padding-top: 12px; border-top: 1px solid #2c3947; color: var(--muted); }
+  section { margin-top: 64px; }
+  ul { list-style: none; padding: 0; margin: 0; }
+  .proje { padding: 16px 0; border-top: 1px solid var(--line); }
+  .proje:last-child { border-bottom: 1px solid var(--line); }
+  .proje h3 { margin: 0 0 4px; font-size: 1.05rem; }
+  .proje p { margin: 0 0 6px; color: var(--muted); }
+  footer { margin-top: 72px; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Bedirhan UĞUR</h1>
+    <p class="sub">Bandırma OnYedi Eylül Üniversitesi Bilgisayar Mühendisliği, 1. sınıf öğrencisi.</p>
+    <pre aria-label="C ile yazılmış kısa bir program"><span class="k">#include</span> <span class="s">&lt;stdio.h&gt;</span>
+
+<span class="k">int</span> main(<span class="k">void</span>) {
+    printf(<span class="s">"Merhaba, ben Bedirhan UĞUR.\n"</span>);
+    printf(<span class="s">"Şu an C öğreniyorum.\n"</span>);
+    <span class="k">return</span> 0;
+}
+<span class="out">Merhaba, ben Bedirhan UĞUR.
+Şu an C öğreniyorum.</span></pre>
+  </header>
+  <section id="hakkimda">
+    <h2>Hakkımda</h2>
+    <p>Merhaba! Üniversiteye yeni başladım ve yazılımı hem derslerde hem de kendi başıma öğreniyorum. Bu siteyi, öğrendiklerimi ve yaptığım projeleri bir arada tutmak için kurdum.</p>
+    <p>İlgi alanlarım: [Kariyerimi geliştirmek], [Projeler kurmak], [Sosyal ilişkiler].</p>
+  </section>
+  <section id="projelerim">
+    <h2>Projelerim</h2>
+    <ul>
+      <li class="proje">
+        <h3>Not ortalaması hesaplayıcı</h3>
+        <p>C ile yazılmış, girilen notlardan ortalama hesaplayan konsol programı.</p>
+      </li>
+      <li class="proje">
+        <h3>Sayı tahmin oyunu</h3>
+        <p>Bilgisayarın tuttuğu sayıyı tahmin etmeye çalıştığın küçük bir oyun.</p>
+      </li>
+      <li class="proje">
+        <h3>Bu site</h3>
+        <p>HTML ve CSS ile sıfırdan yazdığım ilk web sitem.</p>
+      </li>
+    </ul>
+  </section>
+  <section id="iletisim">
+    <h2>İletişim</h2>
+    <p>Bana şuralardan ulaşabilirsin:</p>
+    <p>
+      <a href="mailto:bedirhanu274@gmail.com">bedirhanu274@gmail.com</a><br>
+      <a href="https://github.com/bedrnugr">GitHub</a><br>
+    </p>
+  </section>
+  <footer>© 2026 Bedirhan UĞUR</footer>
+</main>
+</body>
+</html>
